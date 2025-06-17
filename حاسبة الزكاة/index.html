@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zakaha Calcutor</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+ <header>
+    <h2>Zakaha Calcutor</h2>
+    <div>
+     <h4><a href="#">Calctor</a></h4>
+     <h4><a href="#">home</a></h4>
+     <h4><a href="ar.index.html">عربي</a></h4>
+    </div>
+ </header>
+
+ <div class="txts">
+   <h1>calcalute your zakaha</h1>
+   <h3>enter your zakaha value</h3>
+ </div>
+
+ <div class="app" id="theApp">
+  <h2> calculate now</h2>
+
+  <div class="sub">
+    
+   <label>type of zakaha</label>
+
+    <select id="types">
+     <option value='gold'>gold</option>   
+     <option value='silver'>silver</option>   
+     <option value='money'>income / money</option>   
+     <option value='eftar'>eftar</option>   
+     <option value='plaint'>plaint</option>   
+    </select>
+
+    <form style="margin: 5% 25%;display: flex;" id="raido">
+
+ <input type="radio" id="hand" name="fav_language" value="Hand Watered">
+ <label for="hand">Hand Watered</label><br>
+ <input type="radio" id="rain" name="fav_language" value="Rain">
+ <label for="rain">Rain</label><br> 
+   
+    </form>
+
+    <label>Quantaty</label>
+    <input type="number" id="input1" placeholder=" ">
+
+    <label>Live Price</label>
+    <input type="number" id="input2">
+
+    <label>Required..</label>
+    <input type="text" id="result" readonly>
+
+    <button id="btn">Calclate now</button>
+
+  </div>
+ </div>
+
+ <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>حساب الزكاة</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body style="direction: rtl;">
+    <header style="direction: rtl;">
+        <h2>حاسبة الزكاة</h2>
+        <div>
+            <h4><a href="#">الرائسية</a></h4>
+            <h4><a href="#">حساب الزكاة</a></h4>
+            <h4><a href="index.html">English</a></h4>
+        </div>
+    </header>
+
+    <div class="txts">
+        <h1>احسب زكاتك</h1>
+        <h3>أدخل قيمة الزكاة الخاصة بك</h3>
+    </div>
+
+    <div class="app">
+        <h2>احسب زكاتك</h2>
+
+        <div class="sub">
+
+            <label>نوع الزكاة</label>
+
+            <select id="types">
+                <option value='gold'>ذهب</option>
+                <option value='silver'>فضة</option>
+                <option value='money'>الدخل / المال</option>
+                <option value='eftar'>الفطر</option>
+                <option value='plaint'>محاصيل</option>
+            </select>
+
+            <form style="margin: 5% 25%;display: flex;" id="raido">
+
+                <input type="radio" id="hand" name="fav_language" value="Hand Watered">
+                <label for="hand">روي باليد</label><br>
+                <input type="radio" id="rain" name="fav_language" value="Rain">
+                <label for="rain">روي بالمطر</label><br>
+
+            </form>
+
+            <label>الكمية</label>
+            <input type="number" id="input1">
+
+            <label>السعر الحالي</label>
+            <input type="number" id="input2">
+
+            <label>المطلوب..</label>
+            <input type="text" id="result" readonly>
+
+            <button id="btn">احسب الآن</button>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+    <script>
+        btn.addEventListener('click', () => {
+            if (result.value === "didn't reach Nesaab") {
+                result.value = 'لم تصل حد النصاب بعد';
+            }
+        });
+
+        types.addEventListener('change', () => {
+            if (types.value === 'plaint') {
+                input1.placeholder = "اقل كمية المحصول الواجب فيها الزكاة 5 أوسق (حوالي 653 كجم)";
+            }
+        });
+    </script>
+</body>
+
+</html>

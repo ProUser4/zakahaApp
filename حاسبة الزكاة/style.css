@@ -1,0 +1,117 @@
+:root{
+--fontColr : #1d5227
+ 
+}
+
+
+*{
+ padding: 0;
+ margin: 0;
+ color: var(--fontColr);
+
+}
+
+body{
+ box-sizing: border-box;
+ background: #e5e0cb;
+ padding-bottom: 20px;
+
+}
+
+header{
+display: flex;
+justify-content: space-between;
+padding: 15px 30px;
+}
+
+header h2{}
+
+header div {
+display: flex;
+justify-content: space-between;
+font-size: 17px;
+}
+
+header div h4{
+margin-left: 10px;
+}
+
+header div h4 a{
+text-decoration: none;
+}
+
+
+header h2{}
+
+
+.txts{
+ text-align: center;
+ padding: 5px 0;
+}
+
+.txts h1{   
+ margin: 5px 0;
+
+}
+
+.txts h3{}
+
+.app{
+ background: #fbfbfa;
+ border-radius: 20px;
+ text-align: center;
+ padding: 25px;
+ width: 445px;
+ margin: 5px auto;
+}
+
+.app h2{
+ margin: 25px 0;
+}
+
+.sub{}
+
+.sub label{}
+
+.sub select{
+ display: block;
+ padding: 7px;
+ margin: 12px auto;
+ width: 85%;
+ border-radius: 8px;
+}
+
+.sub select option{}
+
+.sub input{
+ display: block;
+ margin: 10px auto;
+ padding: 10px;
+ width: 80%;
+ border-radius: 5px;
+ border: 1px solid;
+}
+
+
+/*#result{pointer-events: none}*/
+
+.sub button{
+background: #5ca563e6;
+color: whitesmoke;
+border-radius: 8px;
+padding: 17px;
+border: none;
+margin: 15px 0;
+width: 80%;}
+
+form{position: relative;}
+
+form label{margin: auto !important;} 
+
+
+@media(max-width:550px){
+ .app{
+  width: 50%;
+  margin: auto;
+ }
+}
